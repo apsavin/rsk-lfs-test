@@ -9,6 +9,7 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import classnames from 'classnames';
 import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
@@ -18,7 +19,7 @@ import logoUrl2x from './logo-small@2x.png';
 class Header extends React.Component {
   render() {
     return (
-      <div className={s.root}>
+      <div className={classnames(s.root, 'test-header')}>
         <div className={s.container}>
           <Navigation />
           <Link className={s.brand} to="/">

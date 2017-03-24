@@ -1,0 +1,18 @@
+rootUrl: http://localhost:3001
+gridUrl: http://127.0.0.1:4444/wd/hub
+browsers:
+    chrome:
+        desiredCapabilities:
+            browserName: chrome
+
+system:
+  projectRoot: ../react-starter-kit
+  sourceRoot: ./src
+  exclude:
+    - node_modules/**
+  debug: true
+  parallelLimit: 3
+  diffColor: '#ff0000'
+  coverage:
+    enabled: true
+    html: false
